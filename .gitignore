@@ -3,9 +3,13 @@
 *.ioc~
 .MX/
 mxbackup/
+.mxproject          # 补充：CubeMX生成的历史记录文件，无需上传
 
 # ========== Keil MDK-ARM ==========
 *.uvgui*
+*.uvoptx            # 补充：Keil的断点和界面配置，绝对不能传，换了电脑会报错
+Objects/            # 补充：Keil 编译产物文件夹（极其重要）
+Listings/           # 补充：Keil 编译列表文件夹（极其重要）
 *.axf
 *.o
 *.d
@@ -30,10 +34,6 @@ RTE/
 .cproject
 .project
 .settings/
-
-# 【按需选择】调试配置 *.launch
-# 如果你想把项目内调试配置纳入版本管理，注释掉；不想提交就打开
-# *.launch
 
 # ========== 通用杂项 ==========
 *.log
